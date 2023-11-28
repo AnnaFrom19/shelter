@@ -1,0 +1,71 @@
+@media screen and (max-width:1275px) {
+    section.cover {  
+        flex-direction: column;
+        padding: 0px 0 0px 155px;        
+    }
+    div.cover-wrapper {
+        padding-left: 0;
+    }
+    h2.cover-header {
+        margin-top: 44px;
+    }
+    div.cover-dog {
+        width: 569px;
+        margin: 100px 30px 0 0;
+        align-self: flex-end;
+    }
+    div.cover-dog img{
+        width: 100%;
+    }   
+    div.cover-wrapper a{
+        margin: auto;
+    }
+     
+    section.about-section div.container-wrapper {
+        padding: 68px 10px 90px;
+        flex-direction: column-reverse;
+    }
+    .about-wrapper {
+        width: 434px;
+        padding-left: 0px;
+        padding-top: 14px;
+    }
+    h2.about-header {
+        margin-right: 96px;
+    }
+    div.about-pets {
+        align-self: center;
+        padding-top: 81px;
+    }
+    div.pets-cards {
+        padding: 0 26px;
+    }
+    div.pets-cards__cards-wrapper {
+        gap: 40px;
+    }
+  
+    section.how-to-help div.container-wrapper {
+        padding: 82px 40px 92px 40px;
+    }
+    div.pet-help-content {
+        margin: 60px 0 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 64px;
+    }
+
+    section.donation .container-wrapper {
+        flex-direction: column-reverse;
+        padding: 60px 0 90px;    
+        align-items: center;
+    }
+    div.donation-wrapper {
+        width: 53%;        
+    }
+    p.remark {
+        padding-right: 20px;
+    }
+    div.donation-puppy {
+    width: 66%;
+    }
+}

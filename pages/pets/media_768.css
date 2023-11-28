@@ -1,0 +1,17 @@
+@media screen and (max-width:1275px) {
+    main .container-wrapper {
+        padding: 95px 20px 64px;
+    }
+    
+    .pets-cards__wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3,auto);
+        gap: 30px 40px;
+        padding: 28px 0 32px;
+    }
+
+    .pets-cards__wrapper div.one-pet-card:nth-child(7),
+    .pets-cards__wrapper div.one-pet-card:nth-child(8) {
+        display: none;        
+    }
+}

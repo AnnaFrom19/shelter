@@ -1,0 +1,25 @@
+@media screen and (max-width:767px) {
+    .burger-menu span {
+        background-color: black;
+      }
+      nav {
+        background-color: #fff;
+      }
+      main .container-wrapper {
+        padding: 44px 20px 32px;
+    }
+
+      .pets-cards__wrapper {
+        grid-template-columns: repeat(1, 1fr);        
+        gap: 30px 40px;
+        padding: 44px 0 32px;
+    }
+    .pets-cards__wrapper div.one-pet-card:nth-child(4),
+    .pets-cards__wrapper div.one-pet-card:nth-child(5),
+    .pets-cards__wrapper div.one-pet-card:nth-child(6) {
+        display: none;        
+    }
+    .pets-cards-navigation button {
+           margin: 10px 5px;
+    }
+}

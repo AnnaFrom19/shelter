@@ -1,0 +1,324 @@
+* {
+  --default--font-color: #4C4C4C;
+  --default--button-font-color: #292929;
+  --default--header-color: #F1CDB3;
+  --default--header-light-color: #545454;
+  --default--button-hover-bg-color: #FDDCC4;
+  --default--link-color: #CDCDCD;
+  --default--link-active-color:#FAFAFA;
+  --default--font-color-light:#FFFFFF;
+  --secondary-bg-color: #F6F6F6;
+  --italic-nb-color: #B2B2B2;
+}
+
+body {
+  color: var(--default--font-color);
+}
+
+a {  
+  color: var(--default--link-color);
+}
+a.active, a:hover {
+  color: var(--default--link-active-color);
+}
+
+h1 {
+  color: var(--default--header-color);
+}
+
+h2 {
+  color: var(--default--header-light-color);
+}
+
+div.top-section {
+  background: url(./assets/images/noise_transparent@2x.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+  width: 100%;
+}
+
+/* Top section */
+div.top-section div.container-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+div.logo-description {
+  color: var(--default--font-color-light);
+}
+
+section.cover {  
+  width: 100%;
+  display: flex;
+  color: var(--default--link-color);
+  padding: 75px 40px 0px 24px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+div.cover-dog {
+  display: flex;
+}
+
+div.cover-wrapper {
+  padding-left: 15px;
+}
+
+h2.cover-header {
+  margin-top: 163px;
+  font-size: 44px;
+  letter-spacing: 0;
+  line-height: 130%;
+  color: var(--default--font-color-light);
+}
+
+p.cover-description {
+  max-width: 460px;
+  text-align: justify;
+  margin-top: 40px;
+  margin-bottom: 43px;
+}
+
+/* About section */
+
+section.about-section {
+  background-color: var(--default--font-color-light);  
+}
+
+section.about-section div.container-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 10px 90px;
+}
+
+.about-wrapper {
+  width: 550px;
+  padding-left: 118px;
+  padding-top: 14px;
+}
+
+h2.about-header {
+  margin-right: 96px;
+}
+
+.about-wrapper p {
+  margin-top: 27px;
+  letter-spacing: 0em;
+  padding-left:2px;
+}
+.about-wrapper p.second {
+  margin-top: 25px;
+}
+
+/* Our friends section */
+
+section.our-friends {
+  background-color: var(--secondary-bg-color);
+  width: 100%;  
+}
+
+section.our-friends div.container-wrapper {
+  padding: 82px 5px 102px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+h2.our-friends__header {
+  text-align: center;
+}
+
+div.pets-cards {
+  display: flex;
+  margin-top: 63px;
+  padding: 0 36px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+button.pets-cards__nav__button {
+  width: 50px;
+  background-color: transparent;
+  border: 2px solid var(--default--header-color);  
+  transition: 1s;
+}
+
+button.pets-cards__nav__button:hover {
+  background-color: var(--default--button-hover-bg-color);
+  transition: 1s;
+}
+
+@keyframes moveLeft {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(33%);
+  }
+}
+
+@keyframes moveRight {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-33%);
+  }
+}
+
+
+div.pets-cards__cards-wrapper {  
+  width: 100%;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.pets-cards__frame {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.pets-cards__all_cards-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 90px;  
+}
+
+section.our-friends a.link-as-button {
+  width: 260px;
+  margin-top: 60px;
+}
+
+section.how-to-help {
+  background-color: var(--default--font-color-light);  
+}
+
+section.how-to-help div.container-wrapper {
+  padding: 82px 40px 92px 40px;
+}
+
+h2.our-friends-header {
+  text-align: center;
+}
+
+div.pet-help-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  column-gap: 120px;
+  row-gap: 56px;
+  margin: 60px 85px 0;
+}
+
+div.one-help {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+div.one-help p {
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+}
+
+section.donation {
+  background-color: var(--secondary-bg-color);
+  width: 100%;  
+}
+
+section.donation .container-wrapper {
+  display: flex;
+  padding: 60px 20px 90px;
+  justify-content: center;
+  align-items: start;
+  gap: 10px;
+}
+div.donation-puppy {
+  text-align: right;
+  width: 55%;
+  padding-top: 40px;
+  padding-right: 10px;
+}
+div.donation-wrapper {
+  width: 45%;  
+  padding: 12px;
+
+}
+
+h3.donation__header {
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.06em;
+  color: #545454;
+  margin: 18px 0;
+}
+p.bank {
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 110%;
+  display: flex;
+  align-items: center;
+  color: #545454;    
+  letter-spacing: 0.06em;
+}
+a.bank-card__button {
+  background-color: var(--default--header-color);
+  border-radius: 9px;
+  border: 0;
+  font-family: 'Georgia';
+  width: fit-content;
+  white-space: nowrap;
+  padding: 10px 15px 10px 60px;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 115%;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.06em;
+  color: var(--default--header-light-color);
+  background-position: 15px;
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-image: url(./assets/icons/credit-card.svg);
+  margin-top: 20px;
+  height: 45px;
+  transition: 1s;
+}
+a.bank-card__button:hover {
+  color: var(--default--button-font-color);
+  background-color: var(--default--button-hover-bg-color);
+  transition: 1s;
+}
+
+p.remark {
+  font-family: 'Arial';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--italic-nb-color);
+  margin-top: 18px;
+  padding-right: 150px;
+}

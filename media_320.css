@@ -1,0 +1,161 @@
+@media screen and (max-width:767px) {
+  .burger-menu span {
+    background-color: #F1CDB3;
+  }
+
+  section.cover {
+    padding: 0px 10px;
+  }
+
+  h2.cover-header {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 30px;
+    letter-spacing: 0.06em;
+  }
+
+  p.cover-description {
+    text-align: center;
+  }
+
+  div.cover-dog {
+    width: 87%;
+    margin: 107px 0px 0 0;
+  }
+
+  section.about-section div.container-wrapper {
+    padding: 25px 10px 35px;
+    text-align: center;
+  }
+
+  .about-wrapper {
+    width: auto;
+    padding: 14px 12px;
+  }
+
+  h2.about-header {
+    margin: 0 10px;
+    line-height: 130%;
+  }
+
+  .about-wrapper p {
+    font-size: 15px;
+    line-height: 160%;
+    text-align: justify;
+    color: #4C4C4C;
+  }
+
+  .about-wrapper p.second {
+    margin-top: 20px;
+  }
+
+
+  div.about-pets {
+    width: 88%;
+    padding-top: 23px;
+  }
+
+  div.about-pets img {
+    width: 100%;
+  }
+
+  section.our-friends div.container-wrapper {
+    padding-top: 44px;
+    padding-bottom: 40px;
+  }
+
+  div.pets-cards {
+    flex-wrap: wrap;
+    padding: 0px 19px;
+    margin-top: 45px;
+    gap: 20px;
+    justify-content: space-evenly;
+  }
+
+  div.pets-cards__nav {
+    order: 2;
+    padding: 0 17px;
+  }
+
+  div.pets-cards__cards-wrapper {
+    order: 1;
+    width: 100%;
+  }
+
+  section.our-friends a.link-as-button {
+    margin-top: 45px;
+  }
+
+  section.how-to-help div.container-wrapper {
+    padding: 45px 20px 40px;
+  }
+
+  div.one-help p {
+    font-size: 15px;
+    line-height: 110%;
+  }
+
+  div.pet-help-content {
+    margin: 46px 0 0;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 34px;
+    row-gap: 32px;
+    justify-content: space-between;
+  }
+
+  div.one-help {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 18px;
+    width: auto;
+    white-space: nowrap;
+  }
+
+  div.one-help img {
+    height: 50px;
+  }
+
+  section.donation .container-wrapper {
+    padding: 36px 0 39px;
+  }
+
+  div.donation-wrapper {
+    width: auto;
+    text-align: center;
+  }
+
+  h3.donation__header {
+    font-size: 25px;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+  }
+
+  div.donation-puppy {
+    padding-top: 18px;
+    padding-right: 5px;
+    width: 82%;
+  }
+
+  div.donation-puppy img {
+    width: 100%;
+  }
+  a.bank-card__button {
+    font-size: 15px;
+    line-height: 110%;
+    margin-top: 0px;
+    margin-left: 6px;
+  }
+  p.bank {
+    letter-spacing: 0em;
+    text-align: center;
+    padding: 23px 10px;
+  }
+  p.remark {
+    padding-right: 0px;
+    text-align: justify;
+    padding: 2px 7px;
+}
+}

@@ -1,0 +1,59 @@
+@media screen and (max-width:1275px) {
+    a.logo {
+        margin: 19px 30px;
+    }
+    nav.page-navigation {
+        padding: 0px 49px;
+    }
+    footer .container-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 0px 55px 0;
+        column-gap: 18px;
+        width: 100%;
+    }
+    .contacts-column {     
+        gap: 27px;
+    }
+    .pet-footer-image {
+        padding: 5px 10px 0;     
+        justify-content: center;        
+        grid-column: 1/3;
+    }
+    div.popup-wrapper {        
+        width: 630px;        
+        gap: 0;
+      }
+      
+      div.popup__img-wrapper {
+        width: 350px;
+        min-width: 350px;
+        max-width: 350px;
+      }
+            
+      div.popup__content-wrapper {
+        max-width: 282px;
+        padding: 10px;
+      }
+      h2.popup_header {
+        margin-top: 0;
+      }
+      p.popup_data {
+        font-size: 13px;
+        margin-top: 10px;
+        margin-right: -1px;
+    }
+    ul.popup-pet-info {
+        margin: 12px 0 auto 0px;
+    }
+    ul.popup-pet-info li {
+        font-size: 14px;
+        padding-top: 7px;
+        padding-left: 0;
+        letter-spacing: 0.02em;
+    }
+    ul.popup-pet-info span {
+        font-size: 15px; 
+        letter-spacing: 0.06em;       
+    }
+}

@@ -1,0 +1,440 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+  --default--font-color: #4C4C4C;
+  --default--button-font-color: #292929;
+  --default--header-color: #F1CDB3;
+  --default--header-light-color: #545454;
+  --default--button-hover-bg-color: #FDDCC4;
+  --default--link-color: #CDCDCD;
+  --default--link-active-color: #FAFAFA;
+  --default--font-color-light: #FFFFFF;
+  --secondary-bg-color: #F6F6F6;
+  --italic-nb-color: #B2B2B2;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  overflow-x: hidden;
+}
+
+h1, h2 {
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 32px;
+  line-height: 50%;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+}
+
+h2 {
+  line-height: 120%;
+  letter-spacing: 0.05em;
+  font-size: 36px;
+
+}
+
+a {
+  text-decoration: none;
+  transition: 1s;
+  white-space: nowrap;
+}
+
+a.active {
+  cursor: default;
+}
+
+a.active {
+  display: block;
+  position: relative;
+}
+
+a.active, a:hover {
+  text-decoration: none;
+  transition: 1s;
+}
+
+a.active::after {
+  width: 100%;
+  display: block;
+  content: "";
+  position: absolute;
+  border-bottom: 2px solid var(--default--header-color);
+}
+
+button, a.link-as-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 207px;
+  height: 50px;
+  color: var(--default--button-font-color);
+  background: var(--default--header-color);
+  border-radius: 100px;
+  cursor: pointer;
+  font-family: 'Georgia';
+  font-size: 17px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  transition: 1s;
+}
+
+button:hover, a.link-as-button:hover {
+  color: var(--default--font-color);
+  background: var(--default--button-hover-bg-color);
+  border-radius: 100px;
+  transition: 1s;
+}
+
+.container-wrapper {
+  max-width: 1280px;
+  margin: auto;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+  transition: 1s;
+}
+
+a.logo {
+  margin: 18px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+div.logo-description {
+  font-size: 13px;
+  line-height: 12px;
+  letter-spacing: 0.1em;
+}
+
+nav.page-navigation {
+  padding: 0px 40px;
+}
+
+nav.page-navigation ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 36px;
+  list-style: none;
+  margin-top: 8px;
+}
+
+div.one-pet-card {
+  background: #FAFAFA;
+  border-radius: 9px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+  padding-bottom: 30px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+div.one-pet-card:hover {
+  background-color: #FFF;
+  transition: 1s;
+  filter: drop-shadow(0px 2px 35px rgba(13, 13, 13, 0.4));
+}
+
+div.one-pet-card p {
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.06em;
+  color: var(--default--header-light-color)
+}
+
+button.pet-card__button {
+  width: 187px;
+  height: 52px;
+  background-color: transparent;
+  border: 2px solid var(--default--header-color);
+  border-radius: 100px;
+}
+
+div.one-pet-card:hover button.pet-card__button {
+  background-color: var(--default--button-hover-bg-color);
+  transition: 1s;
+}
+
+
+footer {
+  background: url(../../assets/images/noise_transparent@2x.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+  width: 100%;
+}
+
+footer .container-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 340px;
+  padding: 20px 30px 0;
+  width: 100%;
+}
+
+.contacts-column {
+  padding: 35px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: self-start;
+  justify-content: space-between;
+}
+
+h4.contacts-header {
+  max-width: 300px;
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: #FFFFFF;
+}
+
+.contacts-column a {
+  display: block;
+  background-size: 40px;
+  height: 44px;
+  padding-left: 60px;
+  color: #F1CDB3;
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  background-repeat: no-repeat;
+  padding-top: 4px;
+}
+
+.contacts-column a:hover {
+  color: #FDDCC4;
+}
+
+a.mail-link {
+  background-image: url(../icons/icon-email.svg);
+  margin-bottom: -12px;
+}
+
+a.phone-link {
+  background-image: url(../icons/icon-phone.svg);
+  margin-bottom: 10px;
+}
+
+a.location-link {
+  background-size: 20px;
+  background-image: url(../icons/icon-marker.svg);
+  padding-left: 40px;
+  background-position-x: 0;
+  background-position-y: 11px;
+  margin-bottom: 10px;
+}
+
+a.second-link {
+  background-position-y: 1px;
+}
+
+.pet-footer-image {
+  text-align: right;
+  padding: 15px 10px 0;
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+}
+
+#burgerMenu, .burger-menu {
+  display: none;
+}
+
+.black-background {
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 100vw;
+  width: 100%;
+  height: 100%;
+  max-width: 0;
+  background-color: #000000;
+  opacity: 0.6;
+  transition: 1s;
+}
+
+div.black-screen {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  top: 0;
+  left: 0;
+  z-index: 20;
+}
+
+body:has(div.black-screen) {
+  overflow: hidden;
+}
+
+button.close-button {
+  cursor: default;
+  width: 52px;
+  height: 52px;
+  border: 2px solid #F1CDB3;
+  border-radius: 100px;
+  position: absolute;
+  background-color: transparent;
+  background-image: url("../icons/close.svg");
+  background-size: 12px;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 40;
+  margin-top: -52px;
+  margin-right: -42px;
+}
+
+div.black-screen:hover {
+  cursor: pointer;
+}
+
+div.popup-wrapper {
+  display: flex;
+  position: relative;
+  justify-content: end;
+  gap: 15px;
+  width: 900px;
+  filter: drop-shadow(0px 2px 35px rgba(13, 13, 13, 0.4));
+  background: #FAFAFA;
+  background-color: #FAFAFA;
+  border-radius: 9px;
+}
+
+div.popup-wrapper:hover {
+  cursor: default;
+}
+
+div.popup__img-wrapper {
+  width: 500px;
+  min-width: 500px;
+  max-width: 500px;
+  overflow: hidden;
+}
+
+div.popup__img-wrapper img {
+  width: 100%;
+  display: block;
+}
+
+div.popup__content-wrapper {
+  width: 384px;
+  padding: 10px 15px;
+}
+
+h2.popup_header {
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  margin: 40px auto 10px 0;
+  text-align: left;
+}
+
+h3.popup_sub-header {
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  margin-bottom: 20px;
+}
+
+p.popup_data {
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+  margin-top: 40px;
+}
+
+ul.popup-pet-info {
+  margin: 34px 0 auto auto;
+  padding-left: 0;
+}
+
+ul.popup-pet-info li span {
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+ul.popup-pet-info li {
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+  list-style-type: none;
+  padding-top: 11px;
+}
+
+ul.popup-pet-info li::before {
+  color: #F1CDB3;
+  content: "▪";
+  padding-right: 10px;
+}
+
+div.black-screen:hover #closeButton {
+  background-color: #F1CDB3;
+}
+
+div.popup-wrapper:hover #closeButton {
+  background-color: transparent;
+}
+
+div.popup-wrapper:hover #closeButton:hover {
+  background-color: #F1CDB3;
+  cursor: pointer;
+}
