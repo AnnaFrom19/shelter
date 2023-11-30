@@ -1,119 +1,139 @@
 @media screen and (max-width:767px) {
   a.logo {
     margin: 20px 20px 30px;
-}
-a.active::after {
-  margin-top: 6px;
-  border-bottom: 4px solid var(--default--header-color);
-}
-    #burgerMenu {
-        opacity: 0;
-    }
-    h2 {
-      font-size: 25px;
-    }
-    .burger-menu {
-      display: flex;
-      flex-direction: column;
-      width: 30px;
-      height: 30px;
-      gap: 7px;
-      cursor: pointer;
-      margin-right: 20px;
-      margin-top: 4px;
-      z-index: 15;
-      transition: 1s;
-      }
-      .burger-menu span {
-        display: block;
-        width: 100%;
-        height: 3px;    
-      }  
-      nav {
-        position: absolute;
-        left: 100vw;
-        width: 320px;
-        max-width: 0;
-        height: 100vh;
-        position: absolute;        
-        z-index: 10;
-        transition: 1s;
-        top: 0;
-        flex-direction: column;
-        display: flex;
-        justify-content: center;
-        background-color: #292929;
-        font-size: 32px;
-        transform: translateX(100%) scale(0);
-        overflow: hidden;        
-      }
-      nav.page-navigation ul {
-        gap: 67px;        
-        flex-direction: column;
-      }
-      #burgerMenu:checked ~ nav {
-        max-width: 320px;
-        right: 0;
-        left: calc(100vw - 320px);
-        transform: translateX(0) scale(1);
-      }
-      #burgerMenu:checked ~ .burger-menu {
-        transform: rotate(90deg);
-      }
-      .pet-footer-image {
-        grid-column: 1/2;
-    }
-    footer .container-wrapper {
-      display: grid;
-      grid-template-columns: 1fr;
-      padding: 18px 10px 0 0;
-    }
-    h4.contacts-header {
-      font-size: 25px;
-      text-align: center;
-    }
-    .contacts-column {
-      padding: 11px 20px 12px 13px; 
-      align-items: center;   
-      gap: 36px;
-    }
-    .pet-footer-image img {
-      margin-top: 1px;
-      width: 86%;
-    }    
-    .contacts-column.locations {
-      align-items: center;
-    }
-    .black-background.visible {
-      z-index: 2;
-      max-width: 100%;
-      left:0;
-      transition: 1s;
-    }
-    div.popup-wrapper {        
-      max-width: 240px;        
-    }
-    
-    div.popup__img-wrapper {
-      display: none;
-    }
-          
-    div.popup__content-wrapper {
-      max-width: 240px;
-    }
-    button.close-button {   
-      margin-top: -50px;
-      margin-right: -30px;
   }
+
+  a.active::after {
+    margin-top: 6px;
+    border-bottom: 4px solid var(--default--header-color);
+  }
+
+  #burgerMenu {
+    opacity: 0;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  .burger-menu {
+    display: flex;
+    flex-direction: column;
+    width: 30px;
+    height: 30px;
+    gap: 7px;
+    cursor: pointer;
+    margin-right: 20px;
+    margin-top: 4px;
+    z-index: 15;
+    transition: 1s;
+  }
+
+  .burger-menu span {
+    display: block;
+    width: 100%;
+    height: 3px;
+  }
+
+  nav {
+    position: absolute;
+    left: 100vw;
+    width: 320px;
+    max-width: 0;
+    height: 100vh;
+    position: absolute;
+    z-index: 10;
+    transition: 1s;
+    top: 0;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    background-color: #292929;
+    font-size: 32px;
+    transform: translateX(100%) scale(0);
+    overflow: hidden;
+  }
+
+  nav.page-navigation ul {
+    gap: 67px;
+    flex-direction: column;
+  }
+
+  #burgerMenu:checked~nav {
+    max-width: 320px;
+    right: 0;
+    left: calc(100vw - 320px);
+    transform: translateX(0) scale(1);
+  }
+
+  #burgerMenu:checked~.burger-menu {
+    transform: rotate(90deg);
+  }
+
+  .pet-footer-image {
+    grid-column: 1/2;
+  }
+
+  footer .container-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 18px 10px 0 0;
+  }
+
+  h4.contacts-header {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .contacts-column {
+    padding: 11px 20px 12px 13px;
+    align-items: center;
+    gap: 36px;
+  }
+
+  .pet-footer-image img {
+    margin-top: 1px;
+    width: 86%;
+  }
+
+  .contacts-column.locations {
+    align-items: center;
+  }
+
+  .black-background.visible {
+    z-index: 2;
+    max-width: 100%;
+    left: 0;
+    transition: 1s;
+  }
+
+  div.popup-wrapper {
+    max-width: 240px;
+  }
+
+  div.popup__img-wrapper {
+    display: none;
+  }
+
+  div.popup__content-wrapper {
+    max-width: 240px;
+  }
+
+  button.close-button {
+    margin-top: -50px;
+    margin-right: -30px;
+  }
+
   h2.popup_header {
     margin-top: 10px;
     text-align: center;
-}
+  }
 
-h3.popup_sub-header {    
+  h3.popup_sub-header {
     text-align: center;
-}
-p.popup_data {
-  text-align: justify;
-}
+  }
+
+  p.popup_data {
+    text-align: justify;
+  }
 }

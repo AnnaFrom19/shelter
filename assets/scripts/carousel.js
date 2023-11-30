@@ -21,7 +21,7 @@ export default class Carousel {
     constructor(popupClass) {
         if (popupClass) this.popup = popupClass;
         (async () => {
-            this.data = await fetch("../data/data.json").then(res => res.json()).catch((e) => { console.log(e) });
+            this.data = await fetch("./assets/data/data.json").then(res => res.json()).catch((e) => { console.log(e) });
             this.setAllCards();
             if (this.popup) this.popup.storeData(this.data);
         })();
